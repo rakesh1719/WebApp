@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-@RestController
+@RestController  //returning only the data not the page
 @RequestMapping("/api")
 @CrossOrigin
 public class ProductController {
