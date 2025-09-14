@@ -1,0 +1,3 @@
+INSERT INTO Product (prod_Id, prod_Name, price, description, quantity) VALUES(1, 'Iphone 16', 120000 , 'iphone 16 pro 256gb rom 8gb ram', 10),
+                                                                          (2, 'Iphone 15', 90000 , 'iphone 15 pro 500gb rom 6gb ram', 20),
+                                                                          (3, 'Iphone 14', 60000 , 'iphone 14 pro 128gb rom 4gb ram', 5);
