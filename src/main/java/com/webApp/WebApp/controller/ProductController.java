@@ -21,8 +21,11 @@ public class ProductController {
     }
 
     @GetMapping("/products/{prodId}") // by default mapping is Get
-    public Product getProductById(@PathVariable  int prodId){
-        return service.getProductById(prodId);
+    public ResponseEntity<Product> getProductById(@PathVariable  int prodId){
+        Product product = service.getProductById(prodId);
+        if(product != null)
+            return new ResponseEntity<>(product, HttpStatus.FOUND);
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     @PostMapping("/products")
